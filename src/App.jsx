@@ -12,15 +12,19 @@ function App() {
 		"파주 프로방스 / 헤이리 마을",
 		"춘천 소양강 스카이워크",
 	];
-	let [list] = useState(data);
+	const [lists, setList] = useState(data);
+  //const로 선언해도 괜찮다. useState를 사용할 때 반환되는 
+  //상태변수(list)와 설정자 함수(setList)는 절대 직접적으로 할당되지 않는다!
+  //불변성(Immutability):
+//React에서는 상태를 직접 수정하지 않고, 항상 새로운 상태 객체를 생성하여 업데이트
 
 	return (
 		<>
 			<Header />
-			<InputFild />
-			<TotalCount list={list} />
+			<InputFild setList={setList}/>
+			<TotalCount lists={lists} />
 			{/* <Nolist /> */}
-			<PostList list={list} />
+			<PostList lists={lists} />
 		</>
 	);
 }

@@ -1,9 +1,9 @@
 import "./totalCount.css";
-export default function TotalCount({ list }) {
+export default function TotalCount({ lists }) {
 	return (
 		<div className="count mw">
 			<strong>count</strong>
-			<span>{list.length}</span>
+			<span>{lists.length}</span>
 		</div>
 	);
 }

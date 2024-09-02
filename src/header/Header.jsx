@@ -4,8 +4,8 @@ export default function Header () {
     return (
         <h1 className="header"> 
             <i className="fa-solid fa-rocket"></i>
-            <string>가자</string>
-            <string>여행</string>
+            <strong>가자</strong>
+            <strong>여행</strong>
         </h1>
     );
 };

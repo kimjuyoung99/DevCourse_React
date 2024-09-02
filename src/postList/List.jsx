@@ -1,9 +1,12 @@
 import "./list.css";
-export default function List() {
+export default function List({ list, setList }) {
+	const removeItem = () => {
+		setList((prev) => prev.filter((i) => i !== list));
+	};
 	return (
 		<li className="list">
-			<p>여행지 명칭</p>
-			<i className="fa-solid fa-trash"></i>
+			<p>{list}</p>
+			<i className="fa-solid fa-trash" onClick={removeItem}></i>
 		</li>
 	);
 }
