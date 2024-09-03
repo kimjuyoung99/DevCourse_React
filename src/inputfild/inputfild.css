@@ -2,8 +2,11 @@
 	display: flex;
 	gap: 1rem;
 	transform: translateY(-50%);
+	padding-top: 80px;
+	padding-bottom: -200px;
 }
 .inputfild > * {
+	margin-bottom: 10px;
 	padding: 1rem;
 	outline: none;
 	border: none;
